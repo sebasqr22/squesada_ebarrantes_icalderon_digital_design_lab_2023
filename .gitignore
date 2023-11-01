@@ -1,0 +1,11 @@
+# ignore everything
+*
+
+# except
+!*/
+!.gitignore
+!*.sv
+!*.qpf
+!*.qsf
+!*.png
+!*.py
