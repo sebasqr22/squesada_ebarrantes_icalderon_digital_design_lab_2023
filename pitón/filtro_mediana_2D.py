@@ -1,14 +1,16 @@
 import random
 
 SIZE = 3
-IMAG = []
+IMAG = {}
 
 
 # Esta función no será necesaria en ensamblador. Es para simular la imagen cargada en memoria
 def generar_imagen_mem():
+    byte = 0
     for i in range(SIZE):
         for j in range(SIZE):
-            IMAG.append(random.randint(0, 255))
+            IMAG[byte] =  random.randint(0, 255)
+            byte += 4
 
 
 # Las siguientes funciones son para recorrer la matriz plana como una en 2D.
@@ -36,7 +38,7 @@ def for_j_ini(i, max_i):
 
 
 def for_j_body(i, j, max_i, max_j):
-    offset_imag = i * SIZE + j  # reg temporal
+    offset_imag = 4 * (i * SIZE + j)  # reg temporal
 
     # Imprimir el valor de la imagen en la posición i, j. El 0 representa la posición de memoria del primer elemento
     # de la imagen.
