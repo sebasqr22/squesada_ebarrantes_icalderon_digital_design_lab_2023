@@ -1,0 +1,4 @@
+Warning (10268): Verilog HDL information at alu.sv(18): always construct contains both blocking and non-blocking assignments File: C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv Line: 18
+Warning (10273): Verilog HDL warning at extend.sv(12): extended using "x" or "z" File: C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv Line: 12
+Warning (10273): Verilog HDL warning at decoder.sv(25): extended using "x" or "z" File: C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv Line: 25
+Warning (10273): Verilog HDL warning at decoder.sv(37): extended using "x" or "z" File: C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv Line: 37

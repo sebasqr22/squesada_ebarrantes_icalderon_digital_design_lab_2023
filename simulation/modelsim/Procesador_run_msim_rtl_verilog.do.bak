@@ -1,0 +1,10 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023 {C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv}
+vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023 {C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder_tb.sv}
+

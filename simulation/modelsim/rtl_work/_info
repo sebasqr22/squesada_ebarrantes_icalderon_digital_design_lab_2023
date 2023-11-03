@@ -1,0 +1,453 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/simulation/modelsim
+vadder
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1699042939
+!i10b 1
+!s100 ]J@RfgaiDEfghc41W?M?A0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IlUFIi^zh^an2=H3>c50DZ0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1699040435
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv
+!i122 1
+L0 1 4
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1699042939.000000
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023
+Z9 tCvgOpt 0
+valu
+R1
+R2
+!i10b 1
+!s100 8]agX=b64;QLb`WSVFh4;2
+R3
+I]L9Ke?4d:dH:[2zaDKG9k2
+R4
+S1
+R0
+w1699041564
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv
+!i122 0
+L0 1 59
+R5
+r1
+!s85 0
+31
+!s108 1699042938.000000
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv|
+!i113 1
+R7
+R8
+R9
+varm
+R1
+Z10 !s110 1699042940
+!i10b 1
+!s100 B<fWU1SR@gVTnO<1f;_JZ1
+R3
+IfI>aL6ozNB5Kd=l073IQW1
+R4
+S1
+R0
+w1699040705
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv
+!i122 13
+L0 1 23
+R5
+r1
+!s85 0
+31
+Z11 !s108 1699042940.000000
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv|
+!i113 1
+R7
+R8
+R9
+vcondcheck
+R1
+R10
+!i10b 1
+!s100 9XK<;docWb;N]HZgMkS`60
+R3
+I[4iR9AC[dQ84h5<ogloCM3
+R4
+S1
+R0
+Z12 w1699040552
+Z13 8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/condlogic.sv
+Z14 FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/condlogic.sv
+!i122 10
+L0 23 26
+R5
+r1
+!s85 0
+31
+R11
+Z15 !s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/condlogic.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/condlogic.sv|
+!i113 1
+R7
+R8
+R9
+vcondlogic
+R1
+R10
+!i10b 1
+!s100 WamNad:0ES3Pd4IblFQ@P3
+R3
+I>1OnMnBnCH`S?gOlm6PCe1
+R4
+S1
+R0
+R12
+R13
+R14
+!i122 10
+L0 1 22
+R5
+r1
+!s85 0
+31
+R11
+R15
+R16
+!i113 1
+R7
+R8
+R9
+vcontroller
+R1
+R10
+!i10b 1
+!s100 ME6P3[3Lg9?`fSN2W5`Ha1
+R3
+IAf_Sz0;Yl7MgiV:?D@J8;3
+R4
+S1
+R0
+w1699040631
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/controller.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/controller.sv
+!i122 12
+L0 1 21
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/controller.sv|
+!i113 1
+R7
+R8
+R9
+vdatapath
+R1
+R10
+!i10b 1
+!s100 ;_akiHT<<JeZYYK:lAU?X3
+R3
+I0GjH[]C<a68M;M0XbAQ1e2
+R4
+S1
+R0
+w1699040916
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/datapath.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/datapath.sv
+!i122 9
+L0 1 35
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecoder
+R1
+R10
+!i10b 1
+!s100 ?]mS9n=H_76TM>8;2795e3
+R3
+IYA2;<Dz794N@8AGNLzP9?1
+R4
+S1
+R0
+w1699040603
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv
+!i122 11
+L0 1 50
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv|
+!i113 1
+R7
+R8
+R9
+vdmem
+R1
+R2
+!i10b 1
+!s100 B`_GWjb6O6Kd=I=>1aOkJ2
+R3
+ICdinWKe[D@m5Q6c4EE@G=0
+R4
+S1
+R0
+w1699040087
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/dmem.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/dmem.sv
+!i122 2
+L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/dmem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/dmem.sv|
+!i113 1
+R7
+R8
+R9
+vextend
+R1
+R2
+!i10b 1
+!s100 dT;ioYCJM8`Nio;Kh>NgW1
+R3
+IU_4TALlClLV^le@9>l1:P3
+R4
+S1
+R0
+w1699040389
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv
+!i122 7
+L0 1 14
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv|
+!i113 1
+R7
+R8
+R9
+vflopenr
+R1
+R2
+!i10b 1
+!s100 HfmIA1dWRW]LgMg[gSHzK2
+R3
+Ij@CmjPUI5<z;PZ7@Kc3E03
+R4
+S1
+R0
+w1699040264
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopenr.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopenr.sv
+!i122 5
+Z17 L0 1 7
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopenr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopenr.sv|
+!i113 1
+R7
+R8
+R9
+vflopr
+R1
+R2
+!i10b 1
+!s100 U>]U>Y;>z?aCzk27]Pmio2
+R3
+IJAR1L>XLdGFCAHnhl6FfS3
+R4
+S1
+R0
+w1699040349
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopr.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopr.sv
+!i122 6
+R17
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopr.sv|
+!i113 1
+R7
+R8
+R9
+vimem
+R1
+R10
+!i10b 1
+!s100 MP:`c12g?7S=;@RAcPO;?0
+R3
+ImhiTX_^>nnGnV[f4QFf2@3
+R4
+S1
+R0
+w1699042768
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv
+!i122 14
+R17
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv|
+!i113 1
+R7
+R8
+R9
+vmux2
+R1
+R2
+!i10b 1
+!s100 E1R@bR_z@a;FAU0iFTL4Z1
+R3
+Id2OzNYVZ5fLVoCRlNXVza1
+R4
+S1
+R0
+w1699040236
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux2.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux2.sv
+!i122 4
+L0 1 5
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux2.sv|
+!i113 1
+R7
+R8
+R9
+vregfile
+R1
+R10
+!i10b 1
+!s100 cnDGG=1@29>GB]`e7VelX1
+R3
+IPdYbR7kjJglLoH=@@dd?m0
+R4
+S1
+R0
+w1699040477
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv
+!i122 8
+L0 1 17
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv|
+!i113 1
+R7
+R8
+R9
+vtestbench
+R1
+R10
+!i10b 1
+!s100 FPKn2gLY<4FiOW9`bB:`b2
+R3
+IeN0Dih_o3@Rjg8XZfEFNW2
+R4
+S1
+R0
+w1699040165
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv
+!i122 15
+L0 1 33
+R5
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv|
+!i113 1
+R7
+R8
+R9
+vtop
+R1
+R2
+!i10b 1
+!s100 O;fHg2aXmFJEYG`z@AI4:2
+R3
+INYE1<U0aP9Inno[V=A=RH2
+R4
+S1
+R0
+w1699040111
+8C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv
+!i122 3
+L0 1 10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023|C:/Users/sebas/Documents/GitHub/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv|
+!i113 1
+R7
+R8
+R9
