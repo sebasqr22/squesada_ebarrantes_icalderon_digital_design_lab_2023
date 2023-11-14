@@ -1,3 +1,5 @@
+//TODO: dependiendo de btn mostrar el contenido en los rangos de address 0-9999 y 10000 a 19999
+
 module read_mem (
 	 input [2:0] btn,
     input [13:0] address,
