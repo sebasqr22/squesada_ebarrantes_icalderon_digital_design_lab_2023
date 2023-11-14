@@ -1,4 +1,5 @@
 module read_mem (
+	 input [2:0] btn,
     input [13:0] address,
     input clock,
     output reg [7:0] data_out
