@@ -1,4 +1,5 @@
 // TODO: revisar si es necesario el output de address
+// error en address, definir otro nombre para el output 
 
 module topRam(input logic clk, rst,
 				  input logic [2:0] btn,
