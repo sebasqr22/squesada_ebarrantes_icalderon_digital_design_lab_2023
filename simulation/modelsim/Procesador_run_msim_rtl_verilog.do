@@ -48,6 +48,9 @@ vmap work rtl_work
 vlog -vlog01compat -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v}
 vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv}
 vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv}
 
 vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv}
 

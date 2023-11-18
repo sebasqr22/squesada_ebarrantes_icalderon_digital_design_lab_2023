@@ -1,17 +1,18 @@
-// TODO: revisar si es necesario el output de address
-// error en address, definir otro nombre para el output 
+// TODO: conectar con VGA
 
-module topRam(input logic clk, rst,
+module topRam(input logic clk, rst, switch,
 				  input logic [2:0] btn,
 				  output [7:0] q,
 				  output [14:0] address);
 				  
 logic wren;
 logic [7:0] data;
+logic [14:0] addr_write, addr_read ;
 
 ram mem(address, clk, data, wren, q);
-
-write_mem escribir(btn, wren, address, data);
+contadorDireccion cont(switch, clk, rst, addr_read);
+write_mem escribir(btn, wren, addr_write, data);
+mux_1 mux1(addr_write, addr_read, rst, address);
 
 
 endmodule

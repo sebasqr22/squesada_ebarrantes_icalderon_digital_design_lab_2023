@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Procesador
-Thu Nov 16 21:14:10 2023
+Sat Nov 18 17:28:15 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -10,12 +10,16 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
   2. Analysis & Elaboration Summary
   3. Parallel Compilation
   4. Analysis & Elaboration IP Cores Summary
-  5. Source assignments for ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated
-  6. Parameter Settings for User Entity Instance: ram:mem|altsyncram:altsyncram_component
+  5. Source assignments for topRam:uut|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated
+  6. Parameter Settings for User Entity Instance: topRam:uut|ram:mem|altsyncram:altsyncram_component
   7. altsyncram Parameter Settings by Entity Instance
   8. Analysis & Elaboration Settings
-  9. Analysis & Elaboration Messages
- 10. Analysis & Elaboration Suppressed Messages
+  9. Port Connectivity Checks: "topRam:uut|mux_1:mux1"
+ 10. Port Connectivity Checks: "topRam:uut|write_mem:escribir"
+ 11. Port Connectivity Checks: "topRam:uut|contadorDireccion:cont"
+ 12. Port Connectivity Checks: "topRam:uut"
+ 13. Analysis & Elaboration Messages
+ 14. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -42,10 +46,10 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                                 ;
 +-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Thu Nov 16 21:14:09 2023          ;
+; Analysis & Elaboration Status ; Successful - Sat Nov 18 17:28:15 2023          ;
 ; Quartus Prime Version         ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                 ; Procesador                                     ;
-; Top-level Entity Name         ; topRam                                         ;
+; Top-level Entity Name         ; topRam_tb                                      ;
 ; Family                        ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
 ; Total registers               ; N/A until Partition Merge                      ;
@@ -73,103 +77,103 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration IP Cores Summary                                                           ;
-+--------+--------------+---------+--------------+--------------+-----------------+-----------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance ; IP Include File ;
-+--------+--------------+---------+--------------+--------------+-----------------+-----------------+
-; Altera ; RAM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |topRam|ram:mem ; ram.v           ;
-+--------+--------------+---------+--------------+--------------+-----------------+-----------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration IP Cores Summary                                                                         ;
++--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance               ; IP Include File ;
++--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
+; Altera ; RAM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |topRam_tb|topRam:uut|ram:mem ; ram.v           ;
++--------+--------------+---------+--------------+--------------+-------------------------------+-----------------+
 
 
-+-----------------------------------------------------------------------------------------------+
-; Source assignments for ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated ;
-+---------------------------------+--------------------+------+---------------------------------+
-; Assignment                      ; Value              ; From ; To                              ;
-+---------------------------------+--------------------+------+---------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                               ;
-+---------------------------------+--------------------+------+---------------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for topRam:uut|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                         ;
++---------------------------------+--------------------+------+--------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                          ;
++---------------------------------+--------------------+------+--------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ram:mem|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+--------------------------+
-; Parameter Name                     ; Value                ; Type                     ;
-+------------------------------------+----------------------+--------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                  ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY               ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY             ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE             ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE           ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                  ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                  ;
-; WIDTH_A                            ; 8                    ; Signed Integer           ;
-; WIDTHAD_A                          ; 15                   ; Signed Integer           ;
-; NUMWORDS_A                         ; 20001                ; Signed Integer           ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                  ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                  ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                  ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                  ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                  ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                  ;
-; WIDTH_B                            ; 1                    ; Untyped                  ;
-; WIDTHAD_B                          ; 1                    ; Untyped                  ;
-; NUMWORDS_B                         ; 1                    ; Untyped                  ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                  ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                  ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                  ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                  ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                  ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                  ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                  ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                  ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                  ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                  ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                  ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                  ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer           ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                  ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                  ;
-; BYTE_SIZE                          ; 8                    ; Untyped                  ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                  ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                  ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                  ;
-; INIT_FILE                          ; memoriaRam.mif       ; Untyped                  ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                  ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                  ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                  ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                  ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                  ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                  ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                  ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                  ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                  ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                  ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                  ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                  ;
-; CBXI_PARAMETER                     ; altsyncram_3vo1      ; Untyped                  ;
-+------------------------------------+----------------------+--------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: topRam:uut|ram:mem|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-------------------------------------+
+; Parameter Name                     ; Value                ; Type                                ;
++------------------------------------+----------------------+-------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                             ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                      ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                             ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                             ;
+; WIDTH_A                            ; 8                    ; Signed Integer                      ;
+; WIDTHAD_A                          ; 15                   ; Signed Integer                      ;
+; NUMWORDS_A                         ; 20001                ; Signed Integer                      ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                             ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                             ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                             ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                             ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                             ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                             ;
+; WIDTH_B                            ; 1                    ; Untyped                             ;
+; WIDTHAD_B                          ; 1                    ; Untyped                             ;
+; NUMWORDS_B                         ; 1                    ; Untyped                             ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                             ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                             ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                             ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                             ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                             ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                             ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                             ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                             ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                             ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                             ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                             ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                             ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                      ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                             ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                             ;
+; BYTE_SIZE                          ; 8                    ; Untyped                             ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                             ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                             ;
+; INIT_FILE                          ; memoriaRam.mif       ; Untyped                             ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                             ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                             ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                             ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                             ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                             ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                             ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                             ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                             ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                             ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                             ;
+; CBXI_PARAMETER                     ; altsyncram_3vo1      ; Untyped                             ;
++------------------------------------+----------------------+-------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                    ;
-+-------------------------------------------+-----------------------------------------+
-; Name                                      ; Value                                   ;
-+-------------------------------------------+-----------------------------------------+
-; Number of entity instances                ; 1                                       ;
-; Entity Instance                           ; ram:mem|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                             ;
-;     -- WIDTH_A                            ; 8                                       ;
-;     -- NUMWORDS_A                         ; 20001                                   ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                            ;
-;     -- WIDTH_B                            ; 1                                       ;
-;     -- NUMWORDS_B                         ; 1                                       ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                  ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                            ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                    ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                               ;
-+-------------------------------------------+-----------------------------------------+
++------------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                               ;
++-------------------------------------------+----------------------------------------------------+
+; Name                                      ; Value                                              ;
++-------------------------------------------+----------------------------------------------------+
+; Number of entity instances                ; 1                                                  ;
+; Entity Instance                           ; topRam:uut|ram:mem|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                        ;
+;     -- WIDTH_A                            ; 8                                                  ;
+;     -- NUMWORDS_A                         ; 20001                                              ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                       ;
+;     -- WIDTH_B                            ; 1                                                  ;
+;     -- NUMWORDS_B                         ; 1                                                  ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                             ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                       ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                               ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                          ;
++-------------------------------------------+----------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -178,7 +182,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; topRam             ; Procesador         ;
+; Top-level entity name                                                           ; topRam_tb          ; Procesador         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -259,13 +263,52 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "topRam:uut|mux_1:mux1"                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                     ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+; A    ; Input ; Warning  ; Input port expression (8 bits) is smaller than the input port (15 bits) it drives.  Extra input bit(s) "A[14..8]" will be connected to GND. ;
+; B    ; Input ; Warning  ; Input port expression (8 bits) is smaller than the input port (15 bits) it drives.  Extra input bit(s) "B[14..8]" will be connected to GND. ;
++------+-------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "topRam:uut|write_mem:escribir"                                                                                            ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                   ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+; addr ; Output ; Warning  ; Output or bidir port (15 bits) is wider than the port expression (8 bits) it drives; bit(s) "addr[14..8]" have no fanouts ;
++------+--------+----------+---------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "topRam:uut|contadorDireccion:cont"                                                                                          ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type   ; Severity ; Details                                                                                                                    ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+; count ; Output ; Warning  ; Output or bidir port (15 bits) is wider than the port expression (8 bits) it drives; bit(s) "count[14..8]" have no fanouts ;
++-------+--------+----------+----------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "topRam:uut"                                                                            ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; switch  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; q       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; address ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +---------------------------------+
 ; Analysis & Elaboration Messages ;
 +---------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Thu Nov 16 21:13:50 2023
+    Info: Processing started: Sat Nov 18 17:27:55 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Procesador -c Procesador --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -309,8 +352,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file control
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
     Info (12023): Found entity 1: arm File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file topram.sv
-    Info (12023): Found entity 1: topRam File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 3
+    Info (12023): Found entity 1: topRam File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 4
 Warning (10229): Verilog HDL Expression warning at write_mem.sv(12): truncated literal to match 14 bits File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv Line: 12
+Warning (10229): Verilog HDL Expression warning at write_mem.sv(17): truncated literal to match 14 bits File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file write_mem.sv
     Info (12023): Found entity 1: write_mem File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_tb.sv
@@ -328,18 +372,22 @@ Info (12021): Found 1 design units, including 1 entities, in source file read_me
 Info (12021): Found 1 design units, including 1 entities, in source file topramvga.sv
     Info (12023): Found entity 1: topRamVga File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadordireccion.sv
-    Info (12023): Found entity 1: contadorDireccion File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 3
+    Info (12023): Found entity 1: contadorDireccion File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file topram_tb.sv
     Info (12023): Found entity 1: topRam_tb File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file ram.v
     Info (12023): Found entity 1: ram File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 40
+Info (12021): Found 1 design units, including 1 entities, in source file mux_1.sv
+    Info (12023): Found entity 1: mux_1 File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at topRamVga.sv(11): created implicit net for "ram_data" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 11
 Warning (10236): Verilog HDL Implicit Net warning at topRamVga.sv(16): created implicit net for "address" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 16
-Info (12127): Elaborating entity "topRam" for the top level hierarchy
-Info (12128): Elaborating entity "ram" for hierarchy "ram:mem" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 11
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
-Info (12130): Elaborated megafunction instantiation "ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
-Info (12133): Instantiated megafunction "ram:mem|altsyncram:altsyncram_component" with the following parameter: File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
+Info (12127): Elaborating entity "topRam_tb" for the top level hierarchy
+Warning (10175): Verilog HDL warning at topRam_tb.sv(37): ignoring unsupported system task File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv Line: 37
+Info (12128): Elaborating entity "topRam" for hierarchy "topRam:uut" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv Line: 17
+Info (12128): Elaborating entity "ram" for hierarchy "topRam:uut|ram:mem" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 12
+Info (12128): Elaborating entity "altsyncram" for hierarchy "topRam:uut|ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
+Info (12130): Elaborated megafunction instantiation "topRam:uut|ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
+Info (12133): Instantiated megafunction "topRam:uut|ram:mem|altsyncram:altsyncram_component" with the following parameter: File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "memoriaRam.mif"
@@ -357,21 +405,26 @@ Info (12133): Instantiated megafunction "ram:mem|altsyncram:altsyncram_component
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3vo1.tdf
     Info (12023): Found entity 1: altsyncram_3vo1 File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_3vo1" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated" File: d:/quartuss/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_3vo1" for hierarchy "topRam:uut|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated" File: d:/quartuss/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_7la.tdf
     Info (12023): Found entity 1: decode_7la File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/decode_7la.tdf Line: 23
-Info (12128): Elaborating entity "decode_7la" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|decode_7la:decode3" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 44
+Info (12128): Elaborating entity "decode_7la" for hierarchy "topRam:uut|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|decode_7la:decode3" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_01a.tdf
     Info (12023): Found entity 1: decode_01a File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/decode_01a.tdf Line: 23
-Info (12128): Elaborating entity "decode_01a" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|decode_01a:rden_decode" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 45
+Info (12128): Elaborating entity "decode_01a" for hierarchy "topRam:uut|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|decode_01a:rden_decode" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_nfb.tdf
     Info (12023): Found entity 1: mux_nfb File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/mux_nfb.tdf Line: 23
-Info (12128): Elaborating entity "mux_nfb" for hierarchy "ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|mux_nfb:mux2" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 46
-Info (12128): Elaborating entity "write_mem" for hierarchy "write_mem:escribir" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 13
+Info (12128): Elaborating entity "mux_nfb" for hierarchy "topRam:uut|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|mux_nfb:mux2" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 46
+Info (12128): Elaborating entity "contadorDireccion" for hierarchy "topRam:uut|contadorDireccion:cont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 13
+Warning (10230): Verilog HDL assignment warning at contadorDireccion.sv(18): truncated value with size 32 to match size of target (15) File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at contadorDireccion.sv(25): truncated value with size 32 to match size of target (15) File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 25
+Info (12128): Elaborating entity "write_mem" for hierarchy "topRam:uut|write_mem:escribir" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 14
+Info (12128): Elaborating entity "mux_1" for hierarchy "topRam:uut|mux_1:mux1" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 15
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/output_files/Procesador.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 9 warnings
     Info: Peak virtual memory: 4799 megabytes
-    Info: Processing ended: Thu Nov 16 21:14:10 2023
+    Info: Processing ended: Sat Nov 18 17:28:15 2023
     Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:41
 

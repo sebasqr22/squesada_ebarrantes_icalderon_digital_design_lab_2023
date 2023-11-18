@@ -1,23 +1,29 @@
 module contadorDireccion (
     input wire switch,
     input wire clk,
-    output reg [13:0] count
+    input wire rst,
+    output reg [14:0] count
 );
 
-always @(posedge clk) begin
-    if (switch == 1'b0) begin
-        // Contar de 0 a 9999
-        if (count == 14'd9999) begin
-            count <= 14'd0;
-        end else begin
-            count <= count + 1;
-        end
+always @(posedge clk or posedge rst) begin
+    if (rst) begin
+        // Resetear el contador a 0 cuando rst es activado
+        count <= 15'd0;
     end else begin
-        // Contar de 10000 a 19999
-        if (count == 14'd19999) begin
-            count <= 14'd10000;
+        if (switch == 1'b0) begin
+            // Contar de 0 a 9999
+            if (count == 15'd9999) begin
+                count <= 15'd0;
+            end else begin
+                count <= count + 1;
+            end
         end else begin
-            count <= count + 1;
+            // Contar de 10000 a 19999
+            if (count == 15'd19999) begin
+                count <= 15'd10000;
+            end else begin
+                count <= count + 1;
+            end
         end
     end
 end
