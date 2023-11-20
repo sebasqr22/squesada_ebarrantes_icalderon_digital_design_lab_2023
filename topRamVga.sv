@@ -7,6 +7,7 @@ module topRamVga (
     output logic [7:0] r, g, b
 );
     logic [7:0] ram_data;
+	 logic [9:0] x, y;
 
     vga imagenDis(
         .clk(clk),
@@ -18,14 +19,18 @@ module topRamVga (
         .blank_b(blank_b),
         .r(r),
         .g(g),
-        .b(b)
+        .b(b),
+		  .x(x),
+		  .y(y)
     );
 
     topRam ramInfo (
-        .clk(clk),
+        .clk(vgaclk),
         .rst(rst),
         .switch(switch),
         .btn(btn),
+		  .x(x),
+		  .y(y),
         .q(ram_data),
         .address(address)
     );

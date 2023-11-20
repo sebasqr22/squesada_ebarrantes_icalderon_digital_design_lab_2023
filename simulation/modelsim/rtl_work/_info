@@ -11,24 +11,24 @@ cModel Technology
 Z0 dD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/simulation/modelsim
 vcontadorDireccion
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1700364782
+Z2 !s110 1700499296
 !i10b 1
-!s100 VEb3Om7nKCh6nUl0<oSzK2
+!s100 _9_VXB:ak;5aAza]jKCN_1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I4RfF2E5]4[E`zUlkZjo7U3
+Ij`?7Q6Q?>a3FDIKTi0DYJ2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1700348268
+w1700498934
 8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv
 FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv
-!i122 8
-L0 1 31
+!i122 3
+L0 1 38
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1700364782.000000
+Z6 !s108 1700499296.000000
 !s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv|
 !i113 1
@@ -38,7 +38,7 @@ Z9 tCvgOpt 0
 ncontador@direccion
 vmux_1
 R1
-R2
+Z10 !s110 1700499297
 !i10b 1
 !s100 ff@XDKDZ5S1_>Yf7OR_IF2
 R3
@@ -46,57 +46,31 @@ IZlz2hTQ@;?BC@<V63faz80
 R4
 S1
 R0
-w1700349714
+Z11 w1700493490
 8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv
 FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv
-!i122 9
+!i122 5
 L0 1 7
 R5
 r1
 !s85 0
 31
-R6
+Z12 !s108 1700499297.000000
 !s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv|
 !i113 1
 R7
 R8
 R9
-vpll
-R1
-Z10 !s110 1700364781
-!i10b 1
-!s100 cDYiWenzbmRDH:n6Ze?=A2
-R3
-I9WI^@X`BVj@NQ2AUOiE?M3
-R4
-S1
-R0
-w1699994940
-8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv
-FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv
-!i122 6
-L0 1 15
-R5
-r1
-!s85 0
-31
-Z11 !s108 1700364781.000000
-!s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv|
-!i113 1
-R7
-R8
-R9
 vram
-R10
+!s110 1700499295
 !i10b 1
 !s100 cTBmNzRb2D;g]@W461l5V3
 R3
 I9`oHMAccb1WDiWT>SSc;@2
 R4
 R0
-w1700182391
+R11
 8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v
 FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v
 !i122 0
@@ -105,7 +79,7 @@ R5
 r1
 !s85 0
 31
-!s108 1700364780.000000
+!s108 1700499295.000000
 !s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v|
 !i113 1
@@ -114,24 +88,24 @@ o-vlog01compat -work work
 R9
 vtopRam
 R1
-R10
+R2
 !i10b 1
-!s100 gEKS5ASNPk`B7XgoFkb`^2
+!s100 a6M[4Q0naPTW9L;nEERO]2
 R3
-IIQg:>?WQMSXmb325B4FB=3
+IX4>cQgzV`U:9@5@jTg[jH3
 R4
 S1
 R0
-w1700350809
+w1700496074
 8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv
 FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv
 !i122 1
-L0 3 16
+L0 3 17
 R5
 r1
 !s85 0
 31
-R11
+R6
 !s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv|
 !i113 1
@@ -139,143 +113,36 @@ R7
 R8
 R9
 ntop@ram
-vtopRamVga
-R1
-R2
-!i10b 1
-!s100 3D<D98;HKkbaWP_0[<cW:1
-R3
-Ic^>97_X;@4RzC;3jk9_ZW2
-R4
-S1
-R0
-w1700354921
-8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv
-FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv
-!i122 7
-L0 1 33
-R5
-r1
-!s85 0
-31
-R11
-!s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv|
-!i113 1
-R7
-R8
-R9
-ntop@ram@vga
-vtopRamVga_tb
-R1
-R2
-!i10b 1
-!s100 m=7S>`K<OUm_^U=WDEFU73
-R3
-IZfD[Z57CIL=olDa3O0dHe0
-R4
-S1
-R0
-w1700354091
-8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga_tb.sv
-FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga_tb.sv
-!i122 11
-L0 3 46
-R5
-r1
-!s85 0
-31
-R6
-!s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga_tb.sv|
-!i113 1
-R7
-R8
-R9
-ntop@ram@vga_tb
-vvga
+vtopRam_tb
 R1
 R10
 !i10b 1
-!s100 =jkj[aiLC;OoWlLf@^RJe2
+!s100 XJ;Oj>f[n_z5dcET0Yhi81
 R3
-I:_bVz872@OON:GAD88lH72
+I3^@Zz1>UO=k4@]0[e_Gb43
 R4
 S1
 R0
-w1700002748
-8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv
-FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv
-!i122 5
-Z12 L0 1 34
+w1700499185
+8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv
+FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv
+!i122 6
+L0 2 43
 R5
 r1
 !s85 0
 31
-R11
-!s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv|
-!i113 1
-R7
-R8
-R9
-vvgaController
-R1
-R10
-!i10b 1
-!s100 O@Wd`ZZYk9zEZcjPhW6B12
-R3
-Ilk5aM0QG6iYOJ085=C:`83
-R4
-S1
-R0
-w1700181613
-8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv
-FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv
-!i122 4
 R12
-R5
-r1
-!s85 0
-31
-R11
-!s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv|
+!s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam_tb.sv|
 !i113 1
 R7
 R8
 R9
-nvga@controller
-vvideoGen
-R1
-R10
-!i10b 1
-!s100 UbnQ0=;QfLkU[Qmf^@NVc0
-R3
-ImiOPDCBLE`F:ia8:7Pl==3
-R4
-S1
-R0
-w1700354360
-8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv
-FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv
-!i122 3
-L0 1 14
-R5
-r1
-!s85 0
-31
-R11
-!s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv|
-!i113 1
-R7
-R8
-R9
-nvideo@gen
+ntop@ram_tb
 vwrite_mem
 R1
-R10
+R2
 !i10b 1
 !s100 Z0InWi?EKLEglQTh[Yc422
 R3
@@ -283,7 +150,7 @@ I@W69W]LDbjRhgBDSJUgJ=1
 R4
 S1
 R0
-w1700191015
+w1700493491
 8D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv
 FD:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv
 !i122 2
@@ -292,7 +159,7 @@ R5
 r1
 !s85 0
 31
-R11
+R6
 !s107 D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023|D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv|
 !i113 1

@@ -35,10 +35,10 @@ module topRam_tb;
     #20 
 	 rst = 1;
 	 btn = 3'b101; // Cambiar el valor de btn después de 20 unidades de tiempo
-    #20 
+    #100 
 	 rst = 0;
 	 btn = 3'b000; // Cambiar nuevamente el valor de btn después de 20 unidades de tiempo
-    #100 $finish; // Finalizar la simulación después de 100 unidades de tiempo
+    #500 $finish; // Finalizar la simulación después de 100 unidades de tiempo
   end
 
 endmodule
