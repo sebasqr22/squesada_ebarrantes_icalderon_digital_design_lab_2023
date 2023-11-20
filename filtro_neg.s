@@ -14,18 +14,14 @@ loop_imag_ini:
     mul r4, r2, r2 @valor máximo de loop_imag (SIZE * SIZE)
 
 loop_imag_body:
-	ldr r5, [r0], #4  @ Carga valor actual de matriz, aumenta la direccion
+	ldr r5, [r0]  @ Carga valor actual de matriz, aumenta la direccion
+	add r0, #4
 	mov r6, #255
 	sub r5, r6, r5   @ pixel = 255 - pixel
 
-	str r5, [r1, r3, LSL #2]
+	str r5, [r1]
+	add r1, #4
 	
 	add r3, r3, #1
 	cmp r3, r4
 	blt loop_imag_body
-	b loop_imag_end
-
-loop_imag_end:
-	mov r0, #42
-    mov r7, #1  @ System call code for exit
-    swi 0
