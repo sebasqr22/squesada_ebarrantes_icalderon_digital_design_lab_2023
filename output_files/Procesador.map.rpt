@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Procesador
-Mon Nov 20 08:49:37 2023
+Mon Nov 20 11:08:47 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 20 08:49:37 2023          ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 20 11:08:46 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; Procesador                                     ;
 ; Top-level Entity Name           ; topRamVga                                      ;
@@ -181,6 +181,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                            ; Library ;
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------+---------+
+; topRamVga.sv                     ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv           ;         ;
 ; memoriaRam.mif                   ; yes             ; User Memory Initialization File  ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/memoriaRam.mif         ;         ;
 ; topRam.sv                        ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv              ;         ;
 ; write_mem.sv                     ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv           ;         ;
@@ -188,7 +189,6 @@ https://fpgasoftware.intel.com/eula.
 ; vgaController.sv                 ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv       ;         ;
 ; vga.sv                           ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv                 ;         ;
 ; pll.sv                           ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv                 ;         ;
-; topRamVga.sv                     ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv           ;         ;
 ; contadorDireccion.sv             ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv   ;         ;
 ; ram.v                            ; yes             ; User Wizard-Generated File       ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v                  ;         ;
 ; mux_1.sv                         ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv               ;         ;
@@ -208,33 +208,33 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 52        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 91        ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 13        ;
-;     -- 5 input functions                    ; 18        ;
-;     -- 4 input functions                    ; 3         ;
-;     -- <=3 input functions                  ; 57        ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 38        ;
-;                                             ;           ;
-; I/O pins                                    ; 35        ;
-; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 160008    ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 42        ;
-; Total fan-out                               ; 889       ;
-; Average fan-out                             ; 3.99      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 74                              ;
+;                                             ;                                 ;
+; Combinational ALUT usage for logic          ; 116                             ;
+;     -- 7 input functions                    ; 0                               ;
+;     -- 6 input functions                    ; 31                              ;
+;     -- 5 input functions                    ; 21                              ;
+;     -- 4 input functions                    ; 6                               ;
+;     -- <=3 input functions                  ; 58                              ;
+;                                             ;                                 ;
+; Dedicated logic registers                   ; 38                              ;
+;                                             ;                                 ;
+; I/O pins                                    ; 35                              ;
+; Total MLAB memory bits                      ; 0                               ;
+; Total block memory bits                     ; 160008                          ;
+;                                             ;                                 ;
+; Total DSP Blocks                            ; 0                               ;
+;                                             ;                                 ;
+; Maximum fan-out node                        ; vga:imagenDis|pll:vgapll|toggle ;
+; Maximum fan-out                             ; 63                              ;
+; Total fan-out                               ; 1042                            ;
+; Average fan-out                             ; 4.20                            ;
++---------------------------------------------+---------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -242,9 +242,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Entity Name       ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |topRamVga                                   ; 91 (1)              ; 38 (0)                    ; 160008            ; 0          ; 35   ; 0            ; |topRamVga                                                                                                              ; topRamVga         ; work         ;
-;    |topRam:ramInfo|                          ; 55 (0)              ; 17 (0)                    ; 160008            ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo                                                                                               ; topRam            ; work         ;
-;       |contadorDireccion:cont|               ; 24 (24)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|contadorDireccion:cont                                                                        ; contadorDireccion ; work         ;
+; |topRamVga                                   ; 116 (1)             ; 38 (0)                    ; 160008            ; 0          ; 35   ; 0            ; |topRamVga                                                                                                              ; topRamVga         ; work         ;
+;    |topRam:ramInfo|                          ; 64 (0)              ; 17 (0)                    ; 160008            ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo                                                                                               ; topRam            ; work         ;
+;       |contadorDireccion:cont|               ; 33 (33)             ; 15 (15)                   ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|contadorDireccion:cont                                                                        ; contadorDireccion ; work         ;
 ;       |mux_1:mux1|                           ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|mux_1:mux1                                                                                    ; mux_1             ; work         ;
 ;       |ram:mem|                              ; 14 (0)              ; 2 (0)                     ; 160008            ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|ram:mem                                                                                       ; ram               ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 14 (0)              ; 2 (0)                     ; 160008            ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component                                                       ; altsyncram        ; work         ;
@@ -253,9 +253,10 @@ https://fpgasoftware.intel.com/eula.
 ;                |decode_7la:decode3|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|decode_7la:decode3     ; decode_7la        ; work         ;
 ;                |mux_nfb:mux2|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|mux_nfb:mux2           ; mux_nfb           ; work         ;
 ;       |write_mem:escribir|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|topRam:ramInfo|write_mem:escribir                                                                            ; write_mem         ; work         ;
-;    |vga:imagenDis|                           ; 35 (0)              ; 21 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|vga:imagenDis                                                                                                ; vga               ; work         ;
+;    |vga:imagenDis|                           ; 51 (0)              ; 21 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|vga:imagenDis                                                                                                ; vga               ; work         ;
 ;       |pll:vgapll|                           ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|vga:imagenDis|pll:vgapll                                                                                     ; pll               ; work         ;
-;       |vgaController:vgaCont|                ; 34 (34)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|vga:imagenDis|vgaController:vgaCont                                                                          ; vgaController     ; work         ;
+;       |vgaController:vgaCont|                ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|vga:imagenDis|vgaController:vgaCont                                                                          ; vgaController     ; work         ;
+;       |videoGen:vgaVideoGen|                 ; 20 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |topRamVga|vga:imagenDis|videoGen:vgaVideoGen                                                                           ; videoGen          ; work         ;
 +----------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -288,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 15    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Clock Enable       ; 24    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -298,7 +299,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |topRamVga|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|mux_nfb:mux2|result_node[5] ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |topRamVga|topRam:ramInfo|contadorDireccion:cont|count[4]                                                                    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |topRamVga|topRam:ramInfo|contadorDireccion:cont|count[7]                                                                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |topRamVga|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|mux_nfb:mux2|result_node[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -316,16 +319,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+------------+----------------------------------------------------+
 ; Parameter Name ; Value      ; Type                                               ;
 +----------------+------------+----------------------------------------------------+
-; HACTIVE        ; 0001100100 ; Unsigned Binary                                    ;
+; HACTIVE        ; 1010000000 ; Unsigned Binary                                    ;
 ; HFP            ; 0000010000 ; Unsigned Binary                                    ;
 ; HSYN           ; 0001100000 ; Unsigned Binary                                    ;
 ; HBP            ; 0000110000 ; Unsigned Binary                                    ;
-; HMAX           ; 0100000100 ; Unsigned Binary                                    ;
+; HMAX           ; 1100100000 ; Unsigned Binary                                    ;
 ; VBP            ; 0000100001 ; Unsigned Binary                                    ;
-; VACTIVE        ; 0001100100 ; Unsigned Binary                                    ;
+; VACTIVE        ; 0111100000 ; Unsigned Binary                                    ;
 ; VFP            ; 0000001010 ; Unsigned Binary                                    ;
 ; VSYN           ; 0000000010 ; Unsigned Binary                                    ;
-; VMAX           ; 0010010001 ; Unsigned Binary                                    ;
+; VMAX           ; 1000001101 ; Unsigned Binary                                    ;
 +----------------+------------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -427,27 +430,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 38                          ;
-;     CLR               ; 5                           ;
-;     CLR SCLR          ; 10                          ;
+;     CLR               ; 1                           ;
+;     ENA CLR           ; 4                           ;
+;     ENA CLR SCLR      ; 10                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
 ;     plain             ; 3                           ;
-; arriav_lcell_comb     ; 92                          ;
+; arriav_lcell_comb     ; 117                         ;
 ;     arith             ; 35                          ;
 ;         1 data inputs ; 35                          ;
-;     normal            ; 57                          ;
+;     normal            ; 82                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 14                          ;
-;         3 data inputs ; 6                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 18                          ;
-;         6 data inputs ; 13                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 6                           ;
+;         5 data inputs ; 21                          ;
+;         6 data inputs ; 31                          ;
 ; boundary_port         ; 35                          ;
 ; stratixv_ram_block    ; 24                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.40                        ;
-; Average LUT depth     ; 2.19                        ;
+; Average LUT depth     ; 2.44                        ;
 +-----------------------+-----------------------------+
 
 
@@ -456,7 +460,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -466,10 +470,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Nov 20 08:49:15 2023
+    Info: Processing started: Mon Nov 20 11:08:39 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Procesador -c Procesador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file topramvga.sv
+    Info (12023): Found entity 1: topRamVga File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file substracter.sv
     Info (12023): Found entity 1: substracter File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/substracter.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file multiplier.sv
@@ -527,8 +533,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll.sv
     Info (12023): Found entity 1: pll File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file read_mem.sv
     Info (12023): Found entity 1: read_mem File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/read_mem.sv Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file topramvga.sv
-    Info (12023): Found entity 1: topRamVga File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadordireccion.sv
     Info (12023): Found entity 1: contadorDireccion File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file topram_tb.sv
@@ -539,14 +543,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux_1.s
     Info (12023): Found entity 1: mux_1 File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file topramvga_tb.sv
     Info (12023): Found entity 1: topRamVga_tb File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga_tb.sv Line: 3
-Warning (10236): Verilog HDL Implicit Net warning at topRamVga.sv(30): created implicit net for "address" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 30
+Warning (10236): Verilog HDL Implicit Net warning at topRamVga.sv(35): created implicit net for "address" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 35
 Info (12127): Elaborating entity "topRamVga" for the top level hierarchy
-Info (12128): Elaborating entity "vga" for hierarchy "vga:imagenDis" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 22
-Info (12128): Elaborating entity "pll" for hierarchy "vga:imagenDis|pll:vgapll" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 13
-Info (12128): Elaborating entity "vgaController" for hierarchy "vga:imagenDis|vgaController:vgaCont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 23
-Info (12128): Elaborating entity "videoGen" for hierarchy "vga:imagenDis|videoGen:vgaVideoGen" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 32
-Info (12128): Elaborating entity "topRam" for hierarchy "topRam:ramInfo" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 31
-Info (12128): Elaborating entity "ram" for hierarchy "topRam:ramInfo|ram:mem" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 12
+Info (12128): Elaborating entity "vga" for hierarchy "vga:imagenDis" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 25
+Info (12128): Elaborating entity "pll" for hierarchy "vga:imagenDis|pll:vgapll" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 14
+Info (12128): Elaborating entity "vgaController" for hierarchy "vga:imagenDis|vgaController:vgaCont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 24
+Info (12128): Elaborating entity "videoGen" for hierarchy "vga:imagenDis|videoGen:vgaVideoGen" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 33
+Info (12128): Elaborating entity "topRam" for hierarchy "topRam:ramInfo" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 36
+Info (12128): Elaborating entity "ram" for hierarchy "topRam:ramInfo|ram:mem" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 13
 Info (12128): Elaborating entity "altsyncram" for hierarchy "topRam:ramInfo|ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
 Info (12130): Elaborated megafunction instantiation "topRam:ramInfo|ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
 Info (12133): Instantiated megafunction "topRam:ramInfo|ram:mem|altsyncram:altsyncram_component" with the following parameter: File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
@@ -577,26 +581,26 @@ Info (12128): Elaborating entity "decode_01a" for hierarchy "topRam:ramInfo|ram:
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_nfb.tdf
     Info (12023): Found entity 1: mux_nfb File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/mux_nfb.tdf Line: 23
 Info (12128): Elaborating entity "mux_nfb" for hierarchy "topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_3vo1:auto_generated|mux_nfb:mux2" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_3vo1.tdf Line: 46
-Info (12128): Elaborating entity "contadorDireccion" for hierarchy "topRam:ramInfo|contadorDireccion:cont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 13
-Warning (10230): Verilog HDL assignment warning at contadorDireccion.sv(18): truncated value with size 32 to match size of target (15) File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 18
-Warning (10230): Verilog HDL assignment warning at contadorDireccion.sv(25): truncated value with size 32 to match size of target (15) File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 25
-Info (12128): Elaborating entity "write_mem" for hierarchy "topRam:ramInfo|write_mem:escribir" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 14
-Info (12128): Elaborating entity "mux_1" for hierarchy "topRam:ramInfo|mux_1:mux1" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 15
+Info (12128): Elaborating entity "contadorDireccion" for hierarchy "topRam:ramInfo|contadorDireccion:cont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 14
+Warning (10230): Verilog HDL assignment warning at contadorDireccion.sv(20): truncated value with size 32 to match size of target (15) File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 20
+Warning (10230): Verilog HDL assignment warning at contadorDireccion.sv(30): truncated value with size 32 to match size of target (15) File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv Line: 30
+Info (12128): Elaborating entity "write_mem" for hierarchy "topRam:ramInfo|write_mem:escribir" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 15
+Info (12128): Elaborating entity "mux_1" for hierarchy "topRam:ramInfo|mux_1:mux1" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 16
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/output_files/Procesador.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 170 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 195 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 111 logic cells
+    Info (21061): Implemented 136 logic cells
     Info (21064): Implemented 24 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4869 megabytes
-    Info: Processing ended: Mon Nov 20 08:49:37 2023
-    Info: Elapsed time: 00:00:22
-    Info: Total CPU time (on all processors): 00:00:44
+    Info: Peak virtual memory: 4873 megabytes
+    Info: Processing ended: Mon Nov 20 11:08:47 2023
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +------------------------------------------+

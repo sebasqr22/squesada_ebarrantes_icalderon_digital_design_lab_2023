@@ -1,11 +1,11 @@
 module vgaController #(
-	parameter HACTIVE = 10'd100,
+	parameter HACTIVE = 10'd640,
 				 HFP = 10'd16,
 				 HSYN = 10'd96,
 				 HBP = 10'd48,
 				 HMAX = HACTIVE + HFP + HSYN + HBP,
 				 VBP = 10'd33,
-				 VACTIVE = 10'd100,
+				 VACTIVE = 10'd480,
 				 VFP = 10'd10,
 				 VSYN = 10'd2,
 				 VMAX = VBP + VACTIVE + VFP + VSYN

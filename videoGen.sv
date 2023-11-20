@@ -4,11 +4,12 @@ module videoGen(
 	output logic [7:0] r, g, b
 );
 
-	
-	  always_comb begin
-        r <= ram_data;
-        g <= ram_data;
-        b <= ram_data;
-    end
+	always @* begin
+		if(x < 100 && y < 100) begin
+			{r, g, b} = {ram_data, ram_data, ram_data};
+		end else begin
+			{r, g, b} = {8'hFF, 8'h00, 8'h00};
+		end
+	end
 	
 endmodule
