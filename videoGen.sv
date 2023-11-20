@@ -6,9 +6,9 @@ module videoGen(
 
 	
 	  always_comb begin
-        r = ram_data;
-        g = ram_data;
-        b = ram_data;
+        r <= ram_data;
+        g <= ram_data;
+        b <= ram_data;
     end
 	
 endmodule
