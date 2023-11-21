@@ -1,5 +1,5 @@
-module top(input logic clk, reset, 
-			  //input logic [2:0] btn, 
+module top(input logic clk, reset, switch,
+			  input logic [2:0] btn, 
 			  output logic [31:0] WriteData, DataAdr,
 			  output logic MemWrite,
 			  output logic vgaclk,
@@ -17,8 +17,10 @@ module top(input logic clk, reset,
 	arm arm(clk, reset, PC, Instr, MemWrite, DataAdr, WriteData, ReadData);
 	
 	// Memoria de instrucciones 
-	assign shortRomDataAdr = PC[4:0];
-	romF2 rom1(shortRomDataAdr, clk, Instr);
+	//assign shortRomDataAdr = PC[4:0];
+	//romF2 rom1(shortRomDataAdr, clk, Instr);
+	
+	imem room(PC, Instr);
 	
 	// Memoria de datos
 	assign shortRamDataAdr = DataAdr[14:0];
@@ -27,18 +29,12 @@ module top(input logic clk, reset,
 	
 	// vga 
 
-	vga imagenDis(
-        .clk(clk),
-        .ram_data(ReadData),
-        .vgaclk(vgaclk),
-       .hsync(hsync),
-       .vsync(vsync),
-        .sync_b(sync_b),
-        .blank_b(blank_b),
-        .r(r),
-        .g(g),
-        .b(b)
-		  //.x(x),
-		  //.y(y)
-    );
+	topRamVga vgaa(	
+		 clk, reset, switch,
+		 btn, vgaclk,
+		 hsync, vsync,
+		 sync_b, blank_b,
+		 r, g, b
+	);
+	
 endmodule

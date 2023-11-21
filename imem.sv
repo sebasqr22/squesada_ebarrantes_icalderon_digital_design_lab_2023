@@ -1,6 +1,12 @@
+
+
 module imem(input logic [31:0] a,
-				input logic clk,
 				output logic [31:0] rd);
 				
-	romF2 rom(a, clk, rd);
+logic [31:0] RAM[63:0];
+
+	initial
+	$readmemh("memfile.dat",RAM);
+	assign rd = RAM[a[31:2]]; // word aligned
+	
 endmodule

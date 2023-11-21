@@ -13,7 +13,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {d:/quartuss/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:29 on Nov 21,2023
+# Start time: 16:01:16 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_ver d:/quartuss/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -95,7 +95,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 15:40:32 on Nov 21,2023, Elapsed time: 0:00:03
+# End time: 16:01:18 on Nov 21,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -106,7 +106,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {d:/quartuss/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:33 on Nov 21,2023
+# Start time: 16:01:19 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver d:/quartuss/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -170,7 +170,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 15:40:34 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:01:20 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -181,7 +181,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {d:/quartuss/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:35 on Nov 21,2023
+# Start time: 16:01:21 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver d:/quartuss/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -223,7 +223,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 15:40:35 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:01:22 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -234,7 +234,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {d:/quartuss/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:36 on Nov 21,2023
+# Start time: 16:01:22 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver d:/quartuss/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -364,7 +364,7 @@
 # 	alt_fault_injection
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 15:40:39 on Nov 21,2023, Elapsed time: 0:00:03
+# End time: 16:01:26 on Nov 21,2023, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -375,7 +375,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {d:/quartuss/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:40 on Nov 21,2023
+# Start time: 16:01:27 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver d:/quartuss/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -458,7 +458,7 @@
 # 	altera_iopll
 # 	fourteennm_altera_iopll
 # 	fourteennm_simple_iopll
-# End time: 15:40:43 on Nov 21,2023, Elapsed time: 0:00:03
+# End time: 16:01:29 on Nov 21,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -469,7 +469,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:43 on Nov 21,2023
+# Start time: 16:01:29 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -483,19 +483,19 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 15:40:51 on Nov 21,2023, Elapsed time: 0:00:08
+# End time: 16:01:37 on Nov 21,2023, Elapsed time: 0:00:08
 # Errors: 0, Warnings: 10
 # vlog -vlog01compat -work cyclonev_ver {d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:52 on Nov 21,2023
+# Start time: 16:01:38 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 15:40:56 on Nov 21,2023, Elapsed time: 0:00:04
+# End time: 16:01:42 on Nov 21,2023, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {d:/quartuss/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:40:57 on Nov 21,2023
+# Start time: 16:01:42 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver d:/quartuss/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -635,7 +635,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 15:40:59 on Nov 21,2023, Elapsed time: 0:00:02
+# End time: 16:01:44 on Nov 21,2023, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -646,15 +646,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:00 on Nov 21,2023
+# Start time: 16:01:45 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 15:41:06 on Nov 21,2023, Elapsed time: 0:00:06
+# End time: 16:01:51 on Nov 21,2023, Elapsed time: 0:00:06
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {d:/quartuss/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:06 on Nov 21,2023
+# Start time: 16:01:51 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver d:/quartuss/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -754,7 +754,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 15:41:07 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:01:52 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -765,7 +765,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:08 on Nov 21,2023
+# Start time: 16:01:53 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/quartuss/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
@@ -775,18 +775,18 @@
 # ** Warning: (vlog-2083) <protected>(<protected>): Carriage return (0x0D) is not followed by a newline (0x0A).
 # 
 # Top level modules:
-# End time: 15:41:17 on Nov 21,2023, Elapsed time: 0:00:09
+# End time: 16:02:02 on Nov 21,2023, Elapsed time: 0:00:09
 # Errors: 0, Warnings: 6
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {d:/quartuss/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:17 on Nov 21,2023
+# Start time: 16:02:02 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver d:/quartuss/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module cyclonev_hd_altpe2_hip_top
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	cyclonev_hd_altpe2_hip_top
-# End time: 15:41:18 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:02:03 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -800,220 +800,220 @@
 # 
 # vlog -vlog01compat -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:18 on Nov 21,2023
+# Start time: 16:02:03 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v 
 # -- Compiling module ram
 # 
 # Top level modules:
 # 	ram
-# End time: 15:41:18 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:03 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/romF2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:19 on Nov 21,2023
+# Start time: 16:02:03 on Nov 21,2023
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/romF2.v 
 # -- Compiling module romF2
 # 
 # Top level modules:
 # 	romF2
-# End time: 15:41:19 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:04 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:19 on Nov 21,2023
+# Start time: 16:02:04 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 15:41:19 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:04 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:19 on Nov 21,2023
+# Start time: 16:02:04 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 15:41:19 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:04 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:20 on Nov 21,2023
+# Start time: 16:02:04 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 15:41:20 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:05 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:20 on Nov 21,2023
+# Start time: 16:02:05 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 15:41:20 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:05 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux2.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:20 on Nov 21,2023
+# Start time: 16:02:05 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux2.sv 
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# End time: 15:41:20 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:05 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopenr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:20 on Nov 21,2023
+# Start time: 16:02:05 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopenr.sv 
 # -- Compiling module flopenr
 # 
 # Top level modules:
 # 	flopenr
-# End time: 15:41:21 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:02:06 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopr.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:21 on Nov 21,2023
+# Start time: 16:02:06 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopr.sv 
 # -- Compiling module flopr
 # 
 # Top level modules:
 # 	flopr
-# End time: 15:41:21 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:06 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:21 on Nov 21,2023
+# Start time: 16:02:06 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv 
 # -- Compiling module extend
 # 
 # Top level modules:
 # 	extend
-# End time: 15:41:21 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:06 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:21 on Nov 21,2023
+# Start time: 16:02:06 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv 
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# End time: 15:41:22 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:02:07 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:22 on Nov 21,2023
+# Start time: 16:02:07 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/datapath.sv 
 # -- Compiling module datapath
 # 
 # Top level modules:
 # 	datapath
-# End time: 15:41:22 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:07 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/condlogic.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:22 on Nov 21,2023
+# Start time: 16:02:07 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/condlogic.sv 
 # -- Compiling module condlogic
 # -- Compiling module condcheck
 # 
 # Top level modules:
 # 	condlogic
-# End time: 15:41:22 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:07 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:22 on Nov 21,2023
+# Start time: 16:02:07 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv 
 # -- Compiling module decoder
 # 
 # Top level modules:
 # 	decoder
-# End time: 15:41:23 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:02:08 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:23 on Nov 21,2023
+# Start time: 16:02:08 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 15:41:23 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:08 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:23 on Nov 21,2023
+# Start time: 16:02:08 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv 
 # -- Compiling module arm
 # 
 # Top level modules:
 # 	arm
-# End time: 15:41:23 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:08 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:23 on Nov 21,2023
+# Start time: 16:02:09 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv 
 # -- Compiling module videoGen
 # 
 # Top level modules:
 # 	videoGen
-# End time: 15:41:24 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:02:09 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:24 on Nov 21,2023
+# Start time: 16:02:09 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv 
 # -- Compiling module vgaController
 # 
 # Top level modules:
 # 	vgaController
-# End time: 15:41:24 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:09 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:24 on Nov 21,2023
+# Start time: 16:02:09 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv 
 # -- Compiling module vga
 # 
 # Top level modules:
 # 	vga
-# End time: 15:41:24 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:09 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:24 on Nov 21,2023
+# Start time: 16:02:09 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv 
 # -- Compiling module pll
 # 
 # Top level modules:
 # 	pll
-# End time: 15:41:25 on Nov 21,2023, Elapsed time: 0:00:01
+# End time: 16:02:10 on Nov 21,2023, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 15:41:25 on Nov 21,2023
+# Start time: 16:02:10 on Nov 21,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023" D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 15:41:25 on Nov 21,2023, Elapsed time: 0:00:00
+# End time: 16:02:10 on Nov 21,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 15:41:25 on Nov 21,2023
+# Start time: 16:02:10 on Nov 21,2023
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.top
@@ -1040,10 +1040,6 @@
 # Loading altera_mf_ver.altsyncram_body
 # Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
 # Loading altera_mf_ver.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'imagenDis'.  Expected 12, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/imagenDis File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv Line: 30
-# ** Warning: (vsim-3722) D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv(30): [TFMPC] - Missing connection for port 'x'.
-# ** Warning: (vsim-3722) D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv(30): [TFMPC] - Missing connection for port 'y'.
 # 
 # add wave *
 # view structure
@@ -1062,5 +1058,7 @@
 # Time: 80000  Instance: testbench.dut.rom1.altsyncram_component.m_default.altsyncram_inst
 # Warning : Address pointed at port A is out of bound!
 # Time: 90000  Instance: testbench.dut.rom1.altsyncram_component.m_default.altsyncram_inst
-# End time: 15:47:15 on Nov 21,2023, Elapsed time: 0:05:50
-# Errors: 0, Warnings: 5
+# Break key hit
+# Simulation stop requested.
+# End time: 16:59:41 on Nov 21,2023, Elapsed time: 0:57:31
+# Errors: 0, Warnings: 2
