@@ -3,8 +3,8 @@ module topRam_tb;
 
   logic clk, rst;
   logic [2:0] btn;
-  logic [7:0] q;
-  logic [14:0] address;
+  logic [31:0] q;
+  //logic [14:0] address;
 
   // Instancia del módulo bajo prueba
   topRam uut (
@@ -12,8 +12,8 @@ module topRam_tb;
     .rst(rst),
 	 .switch(1'b0),
     .btn(btn),
-    .q(q),
-    .address(address)
+    .q(q)
+    //.address(address)
   );
 
   // Generación de clock

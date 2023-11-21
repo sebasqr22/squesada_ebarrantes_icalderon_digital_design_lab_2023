@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Mon Nov 20 11:08:46 2023
+Analysis & Synthesis Status : Successful - Tue Nov 21 12:19:22 2023
 Quartus Prime Version : 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 Revision Name : Procesador
-Top-level Entity Name : topRamVga
+Top-level Entity Name : top
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 38
-Total pins : 35
+Total registers : 539
+Total pins : 96
 Total virtual pins : 0
-Total block memory bits : 160,008
+Total block memory bits : 640,608
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

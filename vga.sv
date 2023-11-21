@@ -1,6 +1,6 @@
 module vga(
 	input clk,
-	input logic [7:0] ram_data,
+	input logic [31:0] ram_data,
 	output logic vgaclk,
 	output logic hsync, vsync,
 	output logic sync_b, blank_b,

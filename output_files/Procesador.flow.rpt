@@ -1,5 +1,5 @@
 Flow report for Procesador
-Mon Nov 20 11:09:39 2023
+Tue Nov 21 12:22:49 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +---------------------------------+------------------------------------------------+
-; Flow Status                     ; Successful - Mon Nov 20 11:09:39 2023          ;
+; Flow Status                     ; Successful - Tue Nov 21 12:22:49 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; Procesador                                     ;
-; Top-level Entity Name           ; topRamVga                                      ;
+; Top-level Entity Name           ; top                                            ;
 ; Family                          ; Cyclone V                                      ;
 ; Device                          ; 5CSEMA5F31C6                                   ;
 ; Timing Models                   ; Final                                          ;
-; Logic utilization (in ALMs)     ; 64 / 32,070 ( < 1 % )                          ;
-; Total registers                 ; 43                                             ;
-; Total pins                      ; 35 / 457 ( 8 % )                               ;
+; Logic utilization (in ALMs)     ; 582 / 32,070 ( 2 % )                           ;
+; Total registers                 ; 638                                            ;
+; Total pins                      ; 96 / 457 ( 21 % )                              ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 160,008 / 4,065,280 ( 4 % )                    ;
+; Total block memory bits         ; 640,608 / 4,065,280 ( 16 % )                   ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                                 ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/20/2023 11:08:39 ;
+; Start date & time ; 11/21/2023 12:18:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Procesador          ;
 +-------------------+---------------------+
@@ -79,34 +79,39 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 929348996527.170050011921516           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 929348996527.170059071716360           ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; topRamVga_tb   ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; topRam_tb      ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; vga_tb         ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; topRam_tb                              ; --            ; --          ; eda_simulation ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; testbench      ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; topRamVga_tb                           ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                     ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; topRamVga_tb.sv                        ; --            ; --          ; topRamVga_tb   ;
 ; EDA_TEST_BENCH_FILE                  ; topRam_tb.sv                           ; --            ; --          ; topRam_tb      ;
 ; EDA_TEST_BENCH_FILE                  ; vga_tb.sv                              ; --            ; --          ; vga_tb         ;
+; EDA_TEST_BENCH_FILE                  ; testbench.sv                           ; --            ; --          ; testbench      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; topRamVga_tb                           ; --            ; --          ; topRamVga_tb   ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; topRam_tb                              ; --            ; --          ; topRam_tb      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; vga_tb                                 ; --            ; --          ; vga_tb         ;
+; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --          ; testbench      ;
 ; EDA_TEST_BENCH_NAME                  ; vga_tb                                 ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; topRam_tb                              ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; topRamVga_tb                           ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --             ;
 ; MISC_FILE                            ; ram_bb.v                               ; --            ; --          ; --             ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; topRamVga   ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; topRamVga   ; Top            ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; topRamVga   ; Top            ;
+; MISC_FILE                            ; romF2_bb.v                             ; --            ; --          ; --             ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; top         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; top         ; Top            ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; top         ; Top            ;
 ; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --             ;
 ; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; topRamVga                              ; Procesador    ; --          ; --             ;
+; TOP_LEVEL_ENTITY                     ; top                                    ; Procesador    ; --          ; --             ;
 +--------------------------------------+----------------------------------------+---------------+-------------+----------------+
 
 
@@ -115,12 +120,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:07     ; 1.0                     ; 4873 MB             ; 00:00:11                           ;
-; Fitter               ; 00:00:37     ; 1.0                     ; 6792 MB             ; 00:00:58                           ;
-; Assembler            ; 00:00:05     ; 1.0                     ; 4885 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:05     ; 1.2                     ; 5204 MB             ; 00:00:05                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4733 MB             ; 00:00:01                           ;
-; Total                ; 00:00:55     ; --                      ; --                  ; 00:01:20                           ;
+; Analysis & Synthesis ; 00:00:47     ; 1.0                     ; 4898 MB             ; 00:00:45                           ;
+; Fitter               ; 00:02:56     ; 1.0                     ; 6720 MB             ; 00:03:28                           ;
+; Assembler            ; 00:00:15     ; 1.0                     ; 4894 MB             ; 00:00:11                           ;
+; Timing Analyzer      ; 00:00:08     ; 1.8                     ; 5236 MB             ; 00:00:10                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4754 MB             ; 00:00:01                           ;
+; Total                ; 00:04:08     ; --                      ; --                  ; 00:04:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

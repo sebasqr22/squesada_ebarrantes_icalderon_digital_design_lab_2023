@@ -6,7 +6,7 @@ module topRamVga (
     output logic sync_b, blank_b,
     output logic [7:0] r, g, b
 );
-    logic [7:0] ram_data;
+    logic [31:0] ram_data;
 	 logic [9:0] x, y;
 
     vga imagenDis(
@@ -31,7 +31,7 @@ module topRamVga (
         .btn(btn),
 		  .x(x),
 		  .y(y),
-        .q(ram_data),
-        .address(address)
+        .q(ram_data)
+        //.address(address)
     );
 endmodule
