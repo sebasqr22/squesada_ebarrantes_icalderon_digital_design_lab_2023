@@ -17,18 +17,10 @@ module top(input logic clk, reset,
 	arm arm(clk, reset, PC, Instr, MemWrite, DataAdr, WriteData, ReadData);
 	
 	// Memoria de instrucciones 
-	//imem imem(PC, clk, Instr);
-	
-	// cambiar PC a 32 bits 
 	assign shortRomDataAdr = PC[4:0];
 	romF2 rom1(shortRomDataAdr, clk, Instr);
 	
 	// Memoria de datos
-	// dmem dmem(clk, MemWrite, DataAdr, WriteData, ReadData);
-	//dmem dmem(clk, reset, MemWrite, btn, x, y, ReadData);
-	
-	
-	// cambiar DataAdr a 32 bits 
 	assign shortRamDataAdr = DataAdr[14:0];
 	
 	ram ram1(shortRamDataAdr, clk, WriteData, MemWrite, ReadData);
@@ -39,7 +31,7 @@ module top(input logic clk, reset,
         .clk(clk),
         .ram_data(ReadData),
         .vgaclk(vgaclk),
-        .hsync(hsync),
+       .hsync(hsync),
        .vsync(vsync),
         .sync_b(sync_b),
         .blank_b(blank_b),

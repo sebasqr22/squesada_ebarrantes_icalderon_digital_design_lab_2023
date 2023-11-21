@@ -46,20 +46,29 @@ vlib rtl_work
 vmap work rtl_work
 
 vlog -vlog01compat -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v}
-vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv}
-vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv}
-vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv}
+vlog -vlog01compat -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/romF2.v}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/alu.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/adder.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux2.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopenr.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/flopr.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/extend.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/datapath.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/condlogic.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/decoder.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/controller.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv}
 vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv}
 vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv}
 vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv}
 vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/pll.sv}
-vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/contadorDireccion.sv}
-vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/mux_1.sv}
-vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga_tb.sv}
 
-vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga_tb.sv}
+vlog -sv -work work +incdir+D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023 {D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/testbench.sv}
 
-vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  topRamVga_tb
+vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  testbench
 
 add wave *
 view structure
