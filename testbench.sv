@@ -1,11 +1,20 @@
+`timescale 1ns / 1ps
+
+
 module testbench();
 	logic clk;
 	logic reset;
 	logic [31:0] WriteData, DataAdr;
 	logic MemWrite;
 	
+  logic [2:0] btn;
+
+  // Outputs
+  logic vgaclk, hsync, vsync, sync_b, blank_b;
+  logic [7:0] r, g, b;
+	
 	// instantiate device to be tested
-	top dut(clk, reset, WriteData, DataAdr, MemWrite);
+	top dut(clk, reset, btn, WriteData, DataAdr, MemWrite,vgaclk, hsync, vsync, sync_b, blank_b, r,g,b );
 	// initialize test
 	initial
 	begin
@@ -16,18 +25,5 @@ module testbench();
 	begin
 	clk <= 1; # 5; clk <= 0; # 5;
 	end
-	// check that 7 gets written to address 0x64
-	// at end of program
-	always @(negedge clk)
-	begin
-	if(MemWrite) begin
-	if(DataAdr === 100 & WriteData === 7) begin
-	$display("Simulation succeeded");
-	$stop;
-	end else if (DataAdr !== 96) begin
-	$display("Simulation failed");
-	$stop;
-	end
-	end
-	end
+	
 endmodule

@@ -9,7 +9,7 @@ module topRamVga_tb;
   // Outputs
   logic vgaclk, hsync, vsync, sync_b, blank_b;
   logic [7:0] r, g, b;
-  logic [14:0] address;
+  //logic [14:0] address;
 
   // Instancia del módulo bajo prueba
   topRamVga uut (
@@ -22,7 +22,6 @@ module topRamVga_tb;
     .vsync(vsync),
     .sync_b(sync_b),
     .blank_b(blank_b),
-	 .address(address),
     .r(r),
     .g(g),
     .b(b)
@@ -40,8 +39,8 @@ module topRamVga_tb;
     switch = 1'b0;
     btn = 3'b000;
     //#5 rst = 1; // Aplicar un pulso de reset después de 5 unidades de tiempo
-    #5 rst = 1'b0; // Desactivar el reset después de 5 unidades de tiempo
-	 #100 $finish;
+    //#5 rst = 1'b0; // Desactivar el reset después de 5 unidades de tiempo
+	 #500 $finish;
   end
 
 
