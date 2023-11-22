@@ -1,4 +1,4 @@
-module top(input logic clk, reset, switch,
+module top(input logic clk, reset, switch, sw2,
 			  input logic [2:0] btn, 
 			  output logic [31:0] WriteData, DataAdr,
 			  output logic MemWrite,
@@ -23,18 +23,21 @@ module top(input logic clk, reset, switch,
 	imem room(PC, Instr);
 	
 	// Memoria de datos
-	assign shortRamDataAdr = DataAdr[14:0];
+	//assign shortRamDataAdr = DataAdr[14:0];
 	
-	ram ram1(shortRamDataAdr, clk, WriteData, MemWrite, ReadData);
+	//ram ram1(shortRamDataAdr, clk, WriteData, MemWrite, ReadData);
 	
 	// vga 
 
 	topRamVga vgaa(	
-		 clk, reset, switch,
-		 btn, vgaclk,
+		 clk, reset, switch, sw2,
+		 //btn, 
+		 WriteData, DataAdr,
+		 vgaclk,
 		 hsync, vsync,
 		 sync_b, blank_b,
-		 r, g, b
+		 r, g, b,
+		 ReadData
 	);
 	
 endmodule

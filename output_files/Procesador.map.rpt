@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Procesador
-Tue Nov 21 17:50:24 2023
+Tue Nov 21 18:13:59 2023
 Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
@@ -19,31 +19,29 @@ Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
  11. Removed Registers Triggering Further Register Optimizations
  12. General Register Statistics
  13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated
- 15. Source assignments for topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated
- 16. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
- 17. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
- 18. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
- 19. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
- 20. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
- 21. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2
- 22. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
- 23. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
- 24. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
- 25. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
- 26. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
- 27. Parameter Settings for User Entity Instance: ram:ram1|altsyncram:altsyncram_component
- 28. Parameter Settings for User Entity Instance: topRamVga:vgaa|vga:imagenDis|vgaController:vgaCont
- 29. Parameter Settings for User Entity Instance: topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component
- 30. altsyncram Parameter Settings by Entity Instance
- 31. Port Connectivity Checks: "topRamVga:vgaa|topRam:ramInfo|mux_1:mux1"
- 32. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
- 33. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
- 34. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
- 35. Post-Synthesis Netlist Statistics for Top Partition
- 36. Elapsed Time Per Partition
- 37. Analysis & Synthesis Messages
- 38. Analysis & Synthesis Suppressed Messages
+ 14. Source assignments for topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated
+ 15. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+ 16. Parameter Settings for User Entity Instance: arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+ 17. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:pcmux
+ 18. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|flopr:pcreg
+ 19. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd1
+ 20. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|adder:pcadd2
+ 21. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra1mux
+ 22. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:ra2mux
+ 23. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:resmux
+ 24. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|mux2:srcbmux
+ 25. Parameter Settings for User Entity Instance: arm:arm|datapath:dp|alu:alu
+ 26. Parameter Settings for User Entity Instance: topRamVga:vgaa|vga:imagenDis|vgaController:vgaCont
+ 27. Parameter Settings for User Entity Instance: topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component
+ 28. altsyncram Parameter Settings by Entity Instance
+ 29. Port Connectivity Checks: "topRamVga:vgaa|topRam:ramInfo|mux_1:mux1"
+ 30. Port Connectivity Checks: "arm:arm|datapath:dp|mux2:ra1mux"
+ 31. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd2"
+ 32. Port Connectivity Checks: "arm:arm|datapath:dp|adder:pcadd1"
+ 33. Post-Synthesis Netlist Statistics for Top Partition
+ 34. Elapsed Time Per Partition
+ 35. Analysis & Synthesis Messages
+ 36. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -70,16 +68,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +---------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 21 17:50:24 2023          ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 21 18:13:59 2023          ;
 ; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
 ; Revision Name                   ; Procesador                                     ;
 ; Top-level Entity Name           ; top                                            ;
 ; Family                          ; Cyclone V                                      ;
 ; Logic utilization (in ALMs)     ; N/A                                            ;
-; Total registers                 ; 220                                            ;
-; Total pins                      ; 100                                            ;
+; Total registers                 ; 218                                            ;
+; Total pins                      ; 101                                            ;
 ; Total virtual pins              ; 0                                              ;
-; Total block memory bits         ; 800,040                                        ;
+; Total block memory bits         ; 640,032                                        ;
 ; Total DSP Blocks                ; 0                                              ;
 ; Total HSSI RX PCSs              ; 0                                              ;
 ; Total HSSI PMA RX Deserializers ; 0                                              ;
@@ -221,7 +219,6 @@ https://fpgasoftware.intel.com/eula.
 ; arm.sv                           ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/arm.sv                 ;         ;
 ; memoriaRam.mif                   ; yes             ; User Memory Initialization File  ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/memoriaRam.mif         ;         ;
 ; topRam.sv                        ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv              ;         ;
-; write_mem.sv                     ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/write_mem.sv           ;         ;
 ; videoGen.sv                      ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/videoGen.sv            ;         ;
 ; vgaController.sv                 ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vgaController.sv       ;         ;
 ; vga.sv                           ; yes             ; User SystemVerilog HDL File      ; D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv                 ;         ;
@@ -250,27 +247,27 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 370       ;
+; Estimate of Logic utilization (ALMs needed) ; 360       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 634       ;
-;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 95        ;
-;     -- 5 input functions                    ; 175       ;
-;     -- 4 input functions                    ; 40        ;
-;     -- <=3 input functions                  ; 324       ;
+; Combinational ALUT usage for logic          ; 630       ;
+;     -- 7 input functions                    ; 1         ;
+;     -- 6 input functions                    ; 78        ;
+;     -- 5 input functions                    ; 193       ;
+;     -- 4 input functions                    ; 41        ;
+;     -- <=3 input functions                  ; 317       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 220       ;
+; Dedicated logic registers                   ; 218       ;
 ;                                             ;           ;
-; I/O pins                                    ; 100       ;
+; I/O pins                                    ; 101       ;
 ; Total MLAB memory bits                      ; 0         ;
-; Total block memory bits                     ; 800040    ;
+; Total block memory bits                     ; 640032    ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 262       ;
-; Total fan-out                               ; 5417      ;
-; Average fan-out                             ; 4.61      ;
+; Maximum fan-out                             ; 164       ;
+; Total fan-out                               ; 4910      ;
+; Average fan-out                             ; 4.28      ;
 +---------------------------------------------+-----------+
 
 
@@ -279,18 +276,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
 ; Compilation Hierarchy Node                      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                              ; Entity Name       ; Library Name ;
 +-------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------+-------------------+--------------+
-; |top                                            ; 634 (1)             ; 220 (0)                   ; 800040            ; 0          ; 100  ; 0            ; |top                                                                                                                             ; top               ; work         ;
-;    |arm:arm|                                    ; 472 (0)             ; 163 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm                                                                                                                     ; arm               ; work         ;
+; |top                                            ; 630 (0)             ; 218 (0)                   ; 640032            ; 0          ; 101  ; 0            ; |top                                                                                                                             ; top               ; work         ;
+;    |arm:arm|                                    ; 480 (0)             ; 163 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm                                                                                                                     ; arm               ; work         ;
 ;       |controller:c|                            ; 18 (0)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c                                                                                                        ; controller        ; work         ;
 ;          |condlogic:cl|                         ; 11 (5)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl                                                                                           ; condlogic         ; work         ;
 ;             |condcheck:cc|                      ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl|condcheck:cc                                                                              ; condcheck         ; work         ;
 ;             |flopenr:flagreg0|                  ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg0                                                                          ; flopenr           ; work         ;
 ;             |flopenr:flagreg1|                  ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|condlogic:cl|flopenr:flagreg1                                                                          ; flopenr           ; work         ;
 ;          |decoder:dec|                          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|controller:c|decoder:dec                                                                                            ; decoder           ; work         ;
-;       |datapath:dp|                             ; 454 (0)             ; 160 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp                                                                                                         ; datapath          ; work         ;
+;       |datapath:dp|                             ; 462 (0)             ; 160 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp                                                                                                         ; datapath          ; work         ;
 ;          |adder:pcadd1|                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|adder:pcadd1                                                                                            ; adder             ; work         ;
 ;          |adder:pcadd2|                         ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|adder:pcadd2                                                                                            ; adder             ; work         ;
-;          |alu:alu|                              ; 105 (105)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|alu:alu                                                                                                 ; alu               ; work         ;
+;          |alu:alu|                              ; 113 (113)           ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|alu:alu                                                                                                 ; alu               ; work         ;
 ;          |flopr:pcreg|                          ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|flopr:pcreg                                                                                             ; flopr             ; work         ;
 ;          |mux2:ra1mux|                          ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:ra1mux                                                                                             ; mux2              ; work         ;
 ;          |mux2:ra2mux|                          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:ra2mux                                                                                             ; mux2              ; work         ;
@@ -298,22 +295,15 @@ https://fpgasoftware.intel.com/eula.
 ;          |mux2:srcbmux|                         ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|mux2:srcbmux                                                                                            ; mux2              ; work         ;
 ;          |regfile:rf|                           ; 213 (213)           ; 128 (128)                 ; 0                 ; 0          ; 0    ; 0            ; |top|arm:arm|datapath:dp|regfile:rf                                                                                              ; regfile           ; work         ;
 ;    |imem:room|                                  ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|imem:room                                                                                                                   ; imem              ; work         ;
-;    |ram:ram1|                                   ; 6 (0)               ; 2 (0)                     ; 640032            ; 0          ; 0    ; 0            ; |top|ram:ram1                                                                                                                    ; ram               ; work         ;
-;       |altsyncram:altsyncram_component|         ; 6 (0)               ; 2 (0)                     ; 640032            ; 0          ; 0    ; 0            ; |top|ram:ram1|altsyncram:altsyncram_component                                                                                    ; altsyncram        ; work         ;
-;          |altsyncram_g0p1:auto_generated|       ; 6 (0)               ; 2 (2)                     ; 640032            ; 0          ; 0    ; 0            ; |top|ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated                                                     ; altsyncram_g0p1   ; work         ;
-;             |decode_01a:rden_decode|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_01a:rden_decode                              ; decode_01a        ; work         ;
-;             |decode_7la:decode3|                ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_7la:decode3                                  ; decode_7la        ; work         ;
-;    |topRamVga:vgaa|                             ; 134 (0)             ; 55 (0)                    ; 160008            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa                                                                                                              ; topRamVga         ; work         ;
-;       |topRam:ramInfo|                          ; 83 (0)              ; 34 (0)                    ; 160008            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo                                                                                               ; topRam            ; work         ;
+;    |topRamVga:vgaa|                             ; 129 (0)             ; 55 (0)                    ; 640032            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa                                                                                                              ; topRamVga         ; work         ;
+;       |topRam:ramInfo|                          ; 78 (0)              ; 34 (0)                    ; 640032            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo                                                                                               ; topRam            ; work         ;
 ;          |contadorDireccion:cont|               ; 52 (52)             ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|contadorDireccion:cont                                                                        ; contadorDireccion ; work         ;
 ;          |mux_1:mux1|                           ; 15 (15)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|mux_1:mux1                                                                                    ; mux_1             ; work         ;
-;          |ram:mem|                              ; 14 (0)              ; 2 (0)                     ; 160008            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem                                                                                       ; ram               ; work         ;
-;             |altsyncram:altsyncram_component|   ; 14 (0)              ; 2 (0)                     ; 160008            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component                                                       ; altsyncram        ; work         ;
-;                |altsyncram_g0p1:auto_generated| ; 14 (0)              ; 2 (2)                     ; 160008            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated                        ; altsyncram_g0p1   ; work         ;
+;          |ram:mem|                              ; 11 (0)              ; 2 (0)                     ; 640032            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem                                                                                       ; ram               ; work         ;
+;             |altsyncram:altsyncram_component|   ; 11 (0)              ; 2 (0)                     ; 640032            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component                                                       ; altsyncram        ; work         ;
+;                |altsyncram_g0p1:auto_generated| ; 11 (0)              ; 2 (2)                     ; 640032            ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated                        ; altsyncram_g0p1   ; work         ;
 ;                   |decode_01a:rden_decode|      ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_01a:rden_decode ; decode_01a        ; work         ;
-;                   |decode_7la:decode3|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_7la:decode3     ; decode_7la        ; work         ;
 ;                   |mux_4hb:mux2|                ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|mux_4hb:mux2           ; mux_4hb           ; work         ;
-;          |write_mem:escribir|                   ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|topRam:ramInfo|write_mem:escribir                                                                            ; write_mem         ; work         ;
 ;       |vga:imagenDis|                           ; 51 (0)              ; 21 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|vga:imagenDis                                                                                                ; vga               ; work         ;
 ;          |pll:vgapll|                           ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|vga:imagenDis|pll:vgapll                                                                                     ; pll               ; work         ;
 ;          |vgaController:vgaCont|                ; 30 (30)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |top|topRamVga:vgaa|vga:imagenDis|vgaController:vgaCont                                                                          ; vgaController     ; work         ;
@@ -327,7 +317,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+----------------+
 ; Name                                                                                                            ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF            ;
 +-----------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+----------------+
-; ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ALTSYNCRAM                              ; AUTO ; Single Port ; 20001        ; 32           ; --           ; --           ; 640032 ; memoriaRam.mif ;
 ; topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 20001        ; 32           ; --           ; --           ; 640032 ; memoriaRam.mif ;
 +-----------------------------------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+----------------+
 
@@ -337,7 +326,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+--------------------------------------------+-----------------+
 ; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                            ; IP Include File ;
 +--------+--------------+---------+--------------+--------------+--------------------------------------------+-----------------+
-; Altera ; RAM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |top|ram:ram1                              ; ram.v           ;
 ; Altera ; RAM: 1-PORT  ; 22.1    ; N/A          ; N/A          ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem ; ram.v           ;
 +--------+--------------+---------+--------------+--------------+--------------------------------------------+-----------------+
 
@@ -711,6 +699,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
 ; arm:arm|datapath:dp|regfile:rf|rf~256 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~320, arm:arm|datapath:dp|regfile:rf|rf~352, ;
 ;                                       ; due to stuck port clock_enable ; arm:arm|datapath:dp|regfile:rf|rf~448                                         ;
+; arm:arm|datapath:dp|regfile:rf|rf~258 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~322, arm:arm|datapath:dp|regfile:rf|rf~354, ;
+;                                       ; due to stuck port clock_enable ; arm:arm|datapath:dp|regfile:rf|rf~450                                         ;
 ; arm:arm|datapath:dp|regfile:rf|rf~260 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~324, arm:arm|datapath:dp|regfile:rf|rf~356, ;
 ;                                       ; due to stuck port clock_enable ; arm:arm|datapath:dp|regfile:rf|rf~452                                         ;
 ; arm:arm|datapath:dp|regfile:rf|rf~262 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~326, arm:arm|datapath:dp|regfile:rf|rf~358, ;
@@ -741,7 +731,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                       ; due to stuck port clock_enable ; arm:arm|datapath:dp|regfile:rf|rf~478                                         ;
 ; arm:arm|datapath:dp|regfile:rf|rf~257 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~321, arm:arm|datapath:dp|regfile:rf|rf~449  ;
 ;                                       ; due to stuck port clock_enable ;                                                                               ;
-; arm:arm|datapath:dp|regfile:rf|rf~258 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~322, arm:arm|datapath:dp|regfile:rf|rf~354  ;
+; arm:arm|datapath:dp|regfile:rf|rf~259 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~323, arm:arm|datapath:dp|regfile:rf|rf~451  ;
 ;                                       ; due to stuck port clock_enable ;                                                                               ;
 ; arm:arm|datapath:dp|regfile:rf|rf~261 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~325, arm:arm|datapath:dp|regfile:rf|rf~453  ;
 ;                                       ; due to stuck port clock_enable ;                                                                               ;
@@ -771,8 +761,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                                       ; due to stuck port clock_enable ;                                                                               ;
 ; arm:arm|datapath:dp|regfile:rf|rf~287 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~351, arm:arm|datapath:dp|regfile:rf|rf~479  ;
 ;                                       ; due to stuck port clock_enable ;                                                                               ;
-; arm:arm|datapath:dp|regfile:rf|rf~386 ; Stuck at GND                   ; arm:arm|datapath:dp|regfile:rf|rf~450                                         ;
-;                                       ; due to stuck port clock_enable ;                                                                               ;
 +---------------------------------------+--------------------------------+-------------------------------------------------------------------------------+
 
 
@@ -781,7 +769,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 220   ;
+; Total registers                              ; 218   ;
 ; Number of registers using Synchronous Clear  ; 47    ;
 ; Number of registers using Synchronous Load   ; 30    ;
 ; Number of registers using Asynchronous Clear ; 67    ;
@@ -796,23 +784,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |top|topRamVga:vgaa|topRam:ramInfo|contadorDireccion:cont|count[11]                                                                   ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|topRamVga:vgaa|topRam:ramInfo|contadorDireccion:cont|count[4]                                                                    ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:srcbmux|y[20]                                                                                           ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|alu:alu|Mux19                                                                                                ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 0 LEs                ; 54 LEs                 ; Yes        ; |top|topRamVga:vgaa|topRam:ramInfo|contadorDireccion:cont|count[18]                                                                   ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|topRamVga:vgaa|topRam:ramInfo|contadorDireccion:cont|count[8]                                                                    ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:srcbmux|y[16]                                                                                           ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|alu:alu|Mux27                                                                                                ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top|topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|mux_4hb:mux2|result_node[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:srcbmux|y[9]                                                                                            ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:resmux|y[30]                                                                                            ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:srcbmux|y[8]                                                                                            ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |top|arm:arm|datapath:dp|mux2:resmux|y[16]                                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------+
-; Source assignments for ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated ;
-+---------------------------------+--------------------+------+----------------------------------+
-; Assignment                      ; Value              ; From ; To                               ;
-+---------------------------------+--------------------+------+----------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                ;
-+---------------------------------+--------------------+------+----------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------+
@@ -934,67 +913,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ram:ram1|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+---------------------------+
-; Parameter Name                     ; Value                ; Type                      ;
-+------------------------------------+----------------------+---------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                   ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY              ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE              ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE            ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                   ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                   ;
-; WIDTH_A                            ; 32                   ; Signed Integer            ;
-; WIDTHAD_A                          ; 15                   ; Signed Integer            ;
-; NUMWORDS_A                         ; 20001                ; Signed Integer            ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                   ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                   ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                   ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                   ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                   ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                   ;
-; WIDTH_B                            ; 1                    ; Untyped                   ;
-; WIDTHAD_B                          ; 1                    ; Untyped                   ;
-; NUMWORDS_B                         ; 1                    ; Untyped                   ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                   ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                   ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                   ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                   ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                   ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                   ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                   ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                   ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                   ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                   ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                   ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                   ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer            ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                   ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                   ;
-; BYTE_SIZE                          ; 8                    ; Untyped                   ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                   ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                   ;
-; INIT_FILE                          ; memoriaRam.mif       ; Untyped                   ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                   ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                   ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                   ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                   ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                   ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                   ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                   ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                   ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                   ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                   ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                   ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                   ;
-; CBXI_PARAMETER                     ; altsyncram_g0p1      ; Untyped                   ;
-+------------------------------------+----------------------+---------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: topRamVga:vgaa|vga:imagenDis|vgaController:vgaCont ;
 +----------------+------------+-------------------------------------------------------------------+
@@ -1080,18 +998,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-----------------------------------------------------------------------+
 ; Name                                      ; Value                                                                 ;
 +-------------------------------------------+-----------------------------------------------------------------------+
-; Number of entity instances                ; 2                                                                     ;
-; Entity Instance                           ; ram:ram1|altsyncram:altsyncram_component                              ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                                           ;
-;     -- WIDTH_A                            ; 32                                                                    ;
-;     -- NUMWORDS_A                         ; 20001                                                                 ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                          ;
-;     -- WIDTH_B                            ; 1                                                                     ;
-;     -- NUMWORDS_B                         ; 1                                                                     ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                                                ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                          ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                  ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                             ;
+; Number of entity instances                ; 1                                                                     ;
 ; Entity Instance                           ; topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                                           ;
 ;     -- WIDTH_A                            ; 32                                                                    ;
@@ -1151,7 +1058,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 220                         ;
+; arriav_ff             ; 218                         ;
 ;     CLR               ; 1                           ;
 ;     CLR SLD           ; 30                          ;
 ;     ENA               ; 128                         ;
@@ -1159,25 +1066,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR SCLR      ; 27                          ;
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 10                          ;
-;     plain             ; 5                           ;
-; arriav_lcell_comb     ; 635                         ;
+;     plain             ; 3                           ;
+; arriav_lcell_comb     ; 631                         ;
 ;     arith             ; 145                         ;
 ;         1 data inputs ; 112                         ;
 ;         4 data inputs ; 2                           ;
 ;         5 data inputs ; 31                          ;
-;     normal            ; 490                         ;
-;         0 data inputs ; 1                           ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 485                         ;
 ;         1 data inputs ; 2                           ;
-;         2 data inputs ; 52                          ;
-;         3 data inputs ; 158                         ;
-;         4 data inputs ; 38                          ;
-;         5 data inputs ; 144                         ;
-;         6 data inputs ; 95                          ;
-; boundary_port         ; 100                         ;
-; stratixv_ram_block    ; 120                         ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 163                         ;
+;         4 data inputs ; 39                          ;
+;         5 data inputs ; 162                         ;
+;         6 data inputs ; 78                          ;
+; boundary_port         ; 101                         ;
+; stratixv_ram_block    ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.10                       ;
-; Average LUT depth     ; 6.72                        ;
+; Max LUT depth         ; 10.90                       ;
+; Average LUT depth     ; 6.83                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1196,7 +1104,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Tue Nov 21 17:50:15 2023
+    Info: Processing started: Tue Nov 21 18:13:48 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Procesador -c Procesador
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -1287,10 +1195,16 @@ Warning (10850): Verilog HDL warning at imem.sv(9): number of words (8) in memor
 Warning (10030): Net "RAM.data_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv Line: 6
 Warning (10030): Net "RAM.waddr_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv Line: 6
 Warning (10030): Net "RAM.we_a" at imem.sv(6) has no driver or initial value, using a default initial value '0' File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv Line: 6
-Info (12128): Elaborating entity "ram" for hierarchy "ram:ram1" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv Line: 28
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ram:ram1|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
-Info (12130): Elaborated megafunction instantiation "ram:ram1|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
-Info (12133): Instantiated megafunction "ram:ram1|altsyncram:altsyncram_component" with the following parameter: File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
+Info (12128): Elaborating entity "topRamVga" for hierarchy "topRamVga:vgaa" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv Line: 41
+Info (12128): Elaborating entity "vga" for hierarchy "topRamVga:vgaa|vga:imagenDis" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 27
+Info (12128): Elaborating entity "pll" for hierarchy "topRamVga:vgaa|vga:imagenDis|pll:vgapll" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 14
+Info (12128): Elaborating entity "vgaController" for hierarchy "topRamVga:vgaa|vga:imagenDis|vgaController:vgaCont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 24
+Info (12128): Elaborating entity "videoGen" for hierarchy "topRamVga:vgaa|vga:imagenDis|videoGen:vgaVideoGen" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 33
+Info (12128): Elaborating entity "topRam" for hierarchy "topRamVga:vgaa|topRam:ramInfo" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 40
+Info (12128): Elaborating entity "ram" for hierarchy "topRamVga:vgaa|topRam:ramInfo|ram:mem" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 16
+Info (12128): Elaborating entity "altsyncram" for hierarchy "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
+Info (12130): Elaborated megafunction instantiation "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
+Info (12133): Instantiated megafunction "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component" with the following parameter: File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/ram.v Line: 86
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "memoriaRam.mif"
@@ -1308,99 +1222,18 @@ Info (12133): Instantiated megafunction "ram:ram1|altsyncram:altsyncram_componen
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_g0p1.tdf
     Info (12023): Found entity 1: altsyncram_g0p1 File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_g0p1" for hierarchy "ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated" File: d:/quartuss/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "altsyncram_g0p1" for hierarchy "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated" File: d:/quartuss/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_7la.tdf
     Info (12023): Found entity 1: decode_7la File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/decode_7la.tdf Line: 23
-Info (12128): Elaborating entity "decode_7la" for hierarchy "ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_7la:decode3" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 44
+Info (12128): Elaborating entity "decode_7la" for hierarchy "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_7la:decode3" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_01a.tdf
     Info (12023): Found entity 1: decode_01a File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/decode_01a.tdf Line: 23
-Info (12128): Elaborating entity "decode_01a" for hierarchy "ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_01a:rden_decode" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 45
+Info (12128): Elaborating entity "decode_01a" for hierarchy "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|decode_01a:rden_decode" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_4hb.tdf
     Info (12023): Found entity 1: mux_4hb File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/mux_4hb.tdf Line: 23
-Info (12128): Elaborating entity "mux_4hb" for hierarchy "ram:ram1|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|mux_4hb:mux2" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 46
-Info (12128): Elaborating entity "topRamVga" for hierarchy "topRamVga:vgaa" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv Line: 38
-Info (12128): Elaborating entity "vga" for hierarchy "topRamVga:vgaa|vga:imagenDis" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 25
-Info (12128): Elaborating entity "pll" for hierarchy "topRamVga:vgaa|vga:imagenDis|pll:vgapll" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 14
-Info (12128): Elaborating entity "vgaController" for hierarchy "topRamVga:vgaa|vga:imagenDis|vgaController:vgaCont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 24
-Info (12128): Elaborating entity "videoGen" for hierarchy "topRamVga:vgaa|vga:imagenDis|videoGen:vgaVideoGen" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/vga.sv Line: 33
-Info (12128): Elaborating entity "topRam" for hierarchy "topRamVga:vgaa|topRam:ramInfo" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRamVga.sv Line: 36
-Info (12128): Elaborating entity "contadorDireccion" for hierarchy "topRamVga:vgaa|topRam:ramInfo|contadorDireccion:cont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 15
-Info (12128): Elaborating entity "write_mem" for hierarchy "topRamVga:vgaa|topRam:ramInfo|write_mem:escribir" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 16
-Info (12128): Elaborating entity "mux_1" for hierarchy "topRamVga:vgaa|topRam:ramInfo|mux_1:mux1" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 17
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a8" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 239
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a9" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 263
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a10" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 287
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a11" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 311
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a12" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 335
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a13" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 359
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a14" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 383
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a15" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 407
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a16" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 431
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a17" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 455
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a18" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 479
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a19" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 503
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a20" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 527
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a21" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 551
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a22" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 575
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a23" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 599
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a24" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 623
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a25" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 647
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a26" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 671
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a27" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 695
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a28" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 719
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a29" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 743
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a30" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 767
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a31" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 791
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a40" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1007
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a41" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1031
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a42" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1055
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a43" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1079
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a44" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1103
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a45" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1127
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a46" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1151
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a47" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1175
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a48" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1199
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a49" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1223
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a50" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1247
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a51" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1271
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a52" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1295
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a53" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1319
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a54" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1343
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a55" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1367
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a56" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1391
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a57" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1415
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a58" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1439
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a59" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1463
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a60" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1487
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a61" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1511
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a62" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1535
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a63" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1559
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a72" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1775
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a73" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1799
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a74" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1823
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a75" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1847
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a76" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1871
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a77" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1895
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a78" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1919
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a79" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1943
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a80" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1967
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a81" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 1991
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a82" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2015
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a83" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2039
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a84" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2063
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a85" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2087
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a86" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2111
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a87" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2135
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a88" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2159
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a89" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2183
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a90" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2207
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a91" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2231
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a92" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2255
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a93" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2279
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a94" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2303
-        Warning (14320): Synthesized away node "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|ram_block1a95" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 2327
+Info (12128): Elaborating entity "mux_4hb" for hierarchy "topRamVga:vgaa|topRam:ramInfo|ram:mem|altsyncram:altsyncram_component|altsyncram_g0p1:auto_generated|mux_4hb:mux2" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/db/altsyncram_g0p1.tdf Line: 46
+Info (12128): Elaborating entity "contadorDireccion" for hierarchy "topRamVga:vgaa|topRam:ramInfo|contadorDireccion:cont" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 17
+Info (12128): Elaborating entity "mux_1" for hierarchy "topRamVga:vgaa|topRam:ramInfo|mux_1:mux1" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/topRam.sv Line: 19
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276004): RAM logic "imem:room|RAM" is uninferred due to inappropriate RAM size File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/imem.sv Line: 6
     Info (276007): RAM logic "arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/regfile.sv Line: 8
@@ -1411,16 +1244,20 @@ Info (17049): 97 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/output_files/Procesador.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1037 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "btn[0]" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv Line: 2
+    Warning (15610): No output dependent on input pin "btn[1]" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv Line: 2
+    Warning (15610): No output dependent on input pin "btn[2]" File: D:/TEC/tdd/squesada_ebarrantes_icalderon_digital_design_lab_2023/top.sv Line: 2
+Info (21057): Implemented 1008 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
     Info (21059): Implemented 94 output pins
-    Info (21061): Implemented 817 logic cells
-    Info (21064): Implemented 120 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 81 warnings
-    Info: Peak virtual memory: 4889 megabytes
-    Info: Processing ended: Tue Nov 21 17:50:24 2023
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:12
+    Info (21061): Implemented 811 logic cells
+    Info (21064): Implemented 96 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Tue Nov 21 18:13:59 2023
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:15
 
 
 +------------------------------------------+
