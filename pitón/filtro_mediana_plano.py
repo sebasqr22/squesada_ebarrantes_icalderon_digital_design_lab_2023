@@ -5,6 +5,7 @@ tamaño_fila = SIZE * 4
 IMAG = {}
 offsets = [-tamaño_fila - 4, -tamaño_fila, -tamaño_fila + 4, -4, 0, 4, tamaño_fila - 4, tamaño_fila, tamaño_fila + 4]
 lista_vecinos = []
+FILT = {}
 
 # 0  4  8  12 16
 # 20 24 28 32 36
@@ -60,7 +61,6 @@ def for_vecinos_body(offset, j, max_j):
     row_size = SIZE * 4
     vecino = offset + offsets[j]
 
-    print(offset, vecino)
     # Check if the neighbor index is within the valid range
     if 0 <= vecino < SIZE * SIZE * 4:
         # Check if the neighbor is within the same column or adjacent columns
@@ -73,16 +73,19 @@ def for_vecinos_body(offset, j, max_j):
     if j < max_j:
         return for_vecinos_body(offset, j, max_j)
 
-    return for_vecinos_end()
+    return for_vecinos_end(offset)
 
 
-def for_vecinos_end():
-    print(lista_vecinos)
+def for_vecinos_end(offset):
+    lista_vecinos.sort()
+    middleIndex = (len(lista_vecinos) - 1) // 2
+    FILT[offset] = lista_vecinos[middleIndex]
     lista_vecinos.clear()
 
 
 def for_i_end():
     print("Fin del recorrido de la imagen")
+    print(FILT)
 
 
 for_i_ini()
