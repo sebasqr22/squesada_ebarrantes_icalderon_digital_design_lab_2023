@@ -2,11 +2,12 @@ module vga_tb();
 
   logic vgaclk, hsync, vsync, sync_b, blank_b, clk;
   logic [7:0] r, g, b;
+  logic [9:0] x, y;
 
   vga pintar(
     clk,
-	 8'b10010110,
-    vgaclk, hsync, vsync, sync_b, blank_b, r, g, b
+	 32'd50,
+    vgaclk, hsync, vsync, sync_b, blank_b, r, g, b, x, y
   );
   
   initial begin

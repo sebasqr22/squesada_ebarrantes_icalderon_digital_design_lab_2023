@@ -13,7 +13,7 @@ module top(input logic clk, reset, switch, sw2,
 	logic [4:0] shortRomDataAdr;
 	
 	
-	// instantiate processor and memories
+	// Procesador
 	arm arm(clk, reset, PC, Instr, MemWrite, DataAdr, WriteData, ReadData);
 	
 	// Memoria de instrucciones 
